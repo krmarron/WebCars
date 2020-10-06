@@ -3,6 +3,9 @@
 	<persistence-unit name="ConsoleCars" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>Model.LotCar</class>
+		<class>Model.Buyer</class>
+		<class>Model.LotDetails</class>
+		<class>Controller.LocalDateAttributeConverter</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cars"/>
