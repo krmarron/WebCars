@@ -10,7 +10,7 @@
 <body>
 	<form method = "post" action = "lotnavigationServlet">
 		<table>
-			<c:forEach items="${requestScope.allLists}" var="currentlot">
+			<c:forEach items="${requestScope.allLots}" var="currentlot">
 				<tr>
 					<td><input type="radio" name="id" value="${currentlot.id}"></td>
 					<td><h2>${currentlot.lotName}</h2></td>
