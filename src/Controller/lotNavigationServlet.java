@@ -12,7 +12,7 @@ import Model.LotDetails;
 /**
  * Servlet implementation class lotNavigationServlet
  */
-@WebServlet("/lotNavigationServlet")
+@WebServlet("/lotnavigationServlet")
 public class lotNavigationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

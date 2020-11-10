@@ -3,9 +3,29 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Home Page</title>
+	<script type = "text/javascript">
+	function validateForm() {
+		var make = document.forms["newCar"]["make"].value;
+		var model = document.forms["newCar"]["model"].value;
+		var year = document.forms["newCar"]["year"].value;
+
+		if (make == "") {
+			alert("Make field is empty.");
+			return false;
+		}
+		if (model == "") {
+			alert("Model field is empty.");
+			return false;
+		}
+		if (year == "") {
+			alert("Year field is empty.");
+			return false;
+		}
+	}
+	</script>
 </head>
 <body>
-	<form action = "addCarServlet" method = "post">
+	<form name = "newCar" action = "addCarServlet" onsubmit = "return validateForm()" method = "post">
 	Make: <input type = "text" name = "make">
 	Model: <input type = "text" name = "model">
 	Year: <input type = "text" name = "year">
